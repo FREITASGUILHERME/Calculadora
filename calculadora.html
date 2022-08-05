@@ -15,21 +15,37 @@
             padding: 0;
         }
         
-        .fundo {
-            background-image: linear-gradient(45deg, black, crimson);
+        body {
+            background-image: linear-gradient(50deg, black, crimson);
             height: 100%;
             color: white;
             font-family: 'Ubuntu', sans-serif;
+            text-align: center;
         }
         
         .calculadora {
             position: absolute;
-            background-color: black;
+            background-color: rgba(0, 0, 0, 0.8);
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
             border-radius: 15px;
             padding: 15px;
+        }
+        
+        .botao {
+            width: 50px;
+            height: 50px;
+            font-size: 25px;
+            cursor: pointer;
+            background-color: rgb(31, 31, 31);
+            border: none;
+            color: white;
+        }
+        
+        .botao:hover {
+            background-color: black;
+            color: white;
         }
     </style>
 
@@ -37,73 +53,73 @@
 
 <body>
     <div class="fundo">
-        <h1>Ola mundo!</h1>
+        <h1>Calculadora</h1>
         <div class="calculadora">
-            <h1>Calculadora</h1>
+
             <p id="resultado"></p>
             <table>
                 <tr>
                     <td>
-                        <button>C</button>
+                        <button class="botao">C</button>
                     </td>
                     <td>
-                        <button><</button>
+                        <button class="botao"><</button>
                     </td>
                     <td>
-                        <button>/</button>
+                        <button class="botao">/</button>
                     </td>
                     <td>
-                        <button>X</button>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <button>7</button>
-                    </td>
-                    <td>
-                        <button>8</button>
-                    </td>
-                    <td>
-                        <button>9</button>
-                    </td>
-                    <td>
-                        <button>-</button>
+                        <button class="botao">X</button>
                     </td>
                 </tr>
                 <tr>
                     <td>
-                        <button>4</button>
+                        <button class="botao">7</button>
                     </td>
                     <td>
-                        <button>5</button>
+                        <button class="botao">8</button>
                     </td>
                     <td>
-                        <button>6</button>
+                        <button class="botao">9</button>
                     </td>
                     <td>
-                        <button>+</button>
+                        <button class="botao">-</button>
                     </td>
                 </tr>
                 <tr>
                     <td>
-                        <button>1</button>
+                        <button class="botao">4</button>
                     </td>
                     <td>
-                        <button>2</button>
+                        <button class="botao">5</button>
                     </td>
                     <td>
-                        <button>3</button>
+                        <button class="botao">6</button>
+                    </td>
+                    <td>
+                        <button class="botao">+</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <button class="botao">1</button>
+                    </td>
+                    <td>
+                        <button class="botao">2</button>
+                    </td>
+                    <td>
+                        <button class="botao">3</button>
                     </td>
                     <td rowspan="2">
-                        <button>=</button>
+                        <button class="botao" style="height: 102px">=</button>
                     </td>
                 </tr>
                 <tr>
                     <td colspan="2">
-                        <button>0</button>
+                        <button class="botao" style="width: 102px">0</button>
                     </td>
                     <td>
-                        <button>.</button>
+                        <button class="botao">.</button>
                     </td>
                 </tr>
             </table>
