@@ -3,13 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculadora Simples</title>
+    <title>Calculadora Científica</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+    <!-- Importando audio para html -->
+    <audio id="som-clique1" src="Audio/Click_1.wav" preload="auto"></audio>
+    
     <div class="calculadora">
-        <input type="text" id="visor" disabled> <!-- Visor (só exibe resultados) -->
+        
+        
+        <button id="alternar-modo">Modo Científico</button>
+        <input type="text" id="visor" disabled>
         <div class="botoes">
+            <!-- Botões padrão -->
+            <button class="limpar">C</button>
+
             <button>7</button>
             <button>8</button>
             <button>9</button>
@@ -24,9 +34,21 @@
             <button>*</button>
             <button>0</button>
             <button>.</button>
-            <button>=</button>
             <button>/</button>
-            <button class="limpar">C</button>
+            
+
+            <!-- Botões científicos (inicialmente escondidos) -->
+            <button class="cientifico hide">sin</button>
+            <button class="cientifico hide">cos</button>
+            <button class="cientifico hide">tan</button>
+            <button class="cientifico hide">log</button>
+            <button class="cientifico hide">√</button>
+            <button class="cientifico hide">^</button>
+            <button class="cientifico hide">π</button>
+            <button class="cientifico hide">(</button>
+            <button class="cientifico hide">)</button>
+
+            <button class="igual">=</button>
         </div>
     </div>
     <script src="script.js"></script>

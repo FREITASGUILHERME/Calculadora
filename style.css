@@ -5,35 +5,39 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
-    background-color: #f4f4f9;
+    background-color: #444;
 }
+
+/* Calculadora */
 
 .calculadora {
     background: #333;
-    border-radius: 10px;
-    padding: 20px;
-    width: 200px;
+    border-radius: 15px;
+    padding: 35px;
+    width: 220px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
 
 #visor {
-    width: 100%;
+    width: 95%;
     padding: 10px;
     margin-bottom: 10px;
     font-size: 20px;
     text-align: right;
     border: none;
     border-radius: 5px;
+    background: #666;
+    color: white;
 }
 
 .botoes {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 10px;
+    gap: 8px;
 }
 
 button {
-    padding: 10px;
+    padding: 13.1px;
     font-size: 18px;
     border: none;
     border-radius: 5px;
@@ -50,3 +54,29 @@ button:hover {
     background: #ff4444;
     grid-column: span 3; /* O botão "C" ocupa 3 colunas */
 }
+
+.igual {
+    background: #4CAF50;
+}
+
+/* Alternar modo */
+
+#alternar-modo {
+    width: 104%;
+    padding: 10px;
+    margin-bottom: 10px;
+    background: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.cientifico {
+    background: #555 !important;
+}
+
+.hide {
+    display: none;
+}
+
